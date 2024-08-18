@@ -12,7 +12,7 @@ const me = {
   firstName: 'Papa Dienou',
   lastName: 'Faye',
   hasSiblings: 'yes',
-  shoeCount: '11',
+  shoeCount: 11,
   favThreeFoods:['Mafé','indian food', 'Grills']
   // TODO - add properties here
 };
@@ -55,3 +55,5 @@ console.log('My updated shoe count is:',me.shoeCount );
   - Cool huh? It works, even though it wasn't there before
   - Console.log your object
 */
+me.favoriteColor = 'blue'
+console.log('My favorite color is:', me.favoriteColor)
