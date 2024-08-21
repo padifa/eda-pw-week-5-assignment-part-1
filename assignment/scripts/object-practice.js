@@ -24,10 +24,14 @@ console.log("A little about me:", me);
     created above to set its value. 
   - Console.log fullName
 */
-let fullName = { firstName: "Papa Dienou", lastName: "Faye" };
+let fullName = `${me.firstName} ${me.lastName}`;
+console.log(`Hello, my name is ${fullName}`);
 
-console.log(`I am : ${"Papa Dienou"} ${"Faye"}`);
 
+// What do you think about the way I declared it in the line below?
+
+fullName = me.firstName + " " + me.lastName;
+console.log(`Hello, my name is ${fullName}`);
 /* 3. Nested arrays
   - Console.log your first favorite food
   - Console.log your last favorite food 
@@ -44,10 +48,10 @@ console.log("My last favorite food is:", me.favThreeFoods[2]);
 */
 me.favThreeFoods = ["Hamburger", "Chinese food", "Salad"];
 console.log("My updated three favorite food are:", me.favThreeFoods);
-console.log("My current shoe count is:", me.shoeCount);
-me.shoeCount = 11 + 1 || 1;
 
-console.log("My updated shoe count is:", me.shoeCount);
+me.shoeCount += 1;
+console.log("My current shoe count is:", me.shoeCount);
+
 /* 5. Add a new property to an existing object.
   - Add a 'favoriteColor' to your existing object
   - Do this the same way you updated the variable above
